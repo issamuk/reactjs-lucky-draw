@@ -114,7 +114,10 @@ class App extends Component {
       showResult,
     } = this.state;
     return (
-      <SiteWrapper>
+      <div  style={{ padding: 20 }}>
+        <div style={{ width: '100%', display: 'flex', alignContent: 'center', justifyContent: 'center', marginBottom: 40 }}>
+          <img src="images/logo.svg" style={{ width: 400 }}/>
+        </div>
         <Helmet>
           <meta charSet="utf-8" />
           <script type="application/ld+json">{REVIEW}</script>
@@ -165,7 +168,7 @@ class App extends Component {
             />
           </Grid.Col>
         </Grid.Row>
-       </SiteWrapper>
+       </div>
     );
   }
 }
