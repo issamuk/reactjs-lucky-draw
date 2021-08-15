@@ -127,27 +127,27 @@ class App extends Component {
           <Grid.Col md={12} sm={12}>
             <Carousel>
                 <div style={{ marginBottom: 17 }}>
-                    <div style={{  backgroundImage: "url(images/pizza.jpeg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center' }} />
-                    <p className="legend">Pizza (imagem ilustrativa)</p>
+                    <div style={{  backgroundImage: "url(images/diario.jpeg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
+                    <p className="legend">Diário da Juventude</p>
                 </div>
                 <div style={{ marginBottom: 32 }}>
-                    <div style={{  backgroundImage: "url(images/juzu.jpg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
-                    <p className="legend">Juzu (imagem ilustrativa)</p>
+                <div style={{  backgroundImage: "url(images/nrh-vol30-2.jpg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
+                <p className="legend"> NRH vol. 30 part. II</p>  
                 </div>
                 <div>
-                <div  />
+                <div />
                     <div style={{  backgroundImage: "url(images/nrh-vol30-1.jfif)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
                     <p className="legend"> NRH vol. 30 part. I</p>
                 </div>
                 <div>
-                <div  />
-                   <div style={{  backgroundImage: "url(images/nrh-vol30-2.jpg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
-                  <p className="legend"> NRH vol. 30 part. II</p>
+                <div />
+                  <div style={{  backgroundImage: "url(images/juzu.jpg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
+                  <p className="legend">Juzu (imagem ilustrativa)</p>
                 </div>
                 <div>
-                <div  />
-                    <div style={{  backgroundImage: "url(images/diario.jpeg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'  }} />
-                    <p className="legend">Diário da Juventude</p>
+                <div />
+                    <div style={{  backgroundImage: "url(images/pizza.jpeg)", margin: '0px auto', height: 300, width: 400, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center' }} />
+                    <p className="legend">Pizza (imagem ilustrativa)</p>
                 </div>
             </Carousel>
           </Grid.Col>
