@@ -7,7 +7,6 @@ import Confetti from 'react-dom-confetti';
 import DrawForm from '../../components/DrawForm';
 import PreviouslyDrawnItemsBlock from '../../components/PreviouslyDrawnItemsBlock';
 import React, { Component } from 'react';
-import SiteWrapper from '../../SiteWrapper';
 import TextLoop from 'react-text-loop';
 
 class App extends Component {
@@ -125,7 +124,7 @@ class App extends Component {
         {items.length !== 0 && (
           <div className="draw-block">
             <Grid.Row>
-              <Grid.Col md={5} sm={12}>
+              <Grid.Col md={12} sm={12}>
                 <div className="draw-section">
                   {!showResult && items && (
                     <TextLoop
@@ -145,17 +144,22 @@ class App extends Component {
                   color="primary"
                   onClick={this.randomDrawItem}
                   disabled={disableDrawButton || currentItems.length <= 1}
+                  className="draw-btn"
                 >
                   {disableDrawButton ? 'Sorteando...' : 'Sortear'}
                 </Button>
               </Grid.Col>
-              <Grid.Col md={4} sm={12}>
-                <PreviouslyDrawnItemsBlock pastDrawnItems={pastDrawnItems} />
-              </Grid.Col>
             </Grid.Row>
           </div>
         )}
-        <Grid.Row>
+        {items.length !== 0 && (
+           <Grid.Row justifyContent="center">
+            <Grid.Col md={4} sm={12}>
+              <PreviouslyDrawnItemsBlock pastDrawnItems={pastDrawnItems} />
+            </Grid.Col>
+           </Grid.Row>
+        )}
+        <Grid.Row justifyContent="center" style={{ marginTop: 100}}>
           <Grid.Col xs={12} md={8}>
             <DrawForm
               className="draw-form"

@@ -33,6 +33,7 @@ class DrawForm extends Component {
               <Form.Group label="" isRequired>
                 <Form.Textarea
                   name="drawItems"
+                  rows={10}
                   placeholder={placeholder}
                   value={value}
                   onChange={this.handleChange}
@@ -57,7 +58,7 @@ class DrawForm extends Component {
                 type="submit"
                 disabled={drawItems.length < 2}
               >
-                Adicionar
+                Atualizar
               </Button>
             </Form.FieldSet>
           </Form>

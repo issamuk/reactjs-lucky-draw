@@ -4,6 +4,12 @@
 
 .draw-block {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.draw-block button {
+  width: 360px; 
+  margin: 0 auto;
 }
 
 .draw-form {
@@ -18,4 +24,9 @@
 
 .result-section {
   text-align: center;
+  margin: 0 auto;
+}
+
+.draw-btn {
+  width: 200px;
 }
