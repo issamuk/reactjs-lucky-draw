@@ -9,8 +9,6 @@ import PreviouslyDrawnItemsBlock from '../../components/PreviouslyDrawnItemsBloc
 import React, { Component } from 'react';
 import SiteWrapper from '../../SiteWrapper';
 import TextLoop from 'react-text-loop';
-import FeaturedNFTSection from '../../components/FeaturedNFTSection';
-import SponsorsSection from '../../components/SponsorsSection';
 
 class App extends Component {
   constructor(props) {
@@ -28,7 +26,7 @@ class App extends Component {
       showResult: false,
       disableDrawButton: false,
       value: '',
-      placeholder: 'Please enter the draw items here. One item per line.',
+      placeholder: '',
       valid: false,
       touched: false,
       validationRules: {
@@ -145,7 +143,7 @@ class App extends Component {
                   onClick={this.randomDrawItem}
                   disabled={disableDrawButton || currentItems.length <= 1}
                 >
-                  {disableDrawButton ? 'Drawing...' : 'Draw'}
+                  {disableDrawButton ? 'Sorteando...' : 'Sortear'}
                 </Button>
               </Grid.Col>
               <Grid.Col md={4} sm={12}>
@@ -167,40 +165,7 @@ class App extends Component {
             />
           </Grid.Col>
         </Grid.Row>
-        <hr />
-        <FeaturedNFTSection />
-        <hr />
-        <SponsorsSection />
-        <hr />
-        <Grid.Row>
-          <Grid.Col xs={12} md={6}>
-            <h2>What Our Users Say</h2>
-            <div className="powr-reviews" id="83081483_1602856389"></div>
-          </Grid.Col>
-          <Grid.Col xs={12} md={6}>
-            <div
-              className="fb-page"
-              data-href="https://www.facebook.com/luckydraw.me/"
-              data-tabs="timeline"
-              data-width=""
-              data-height=""
-              data-small-header="true"
-              data-adapt-container-width="true"
-              data-hide-cover="false"
-              data-show-facepile="true"
-            >
-              <blockquote
-                cite="https://www.facebook.com/luckydraw.me/"
-                className="fb-xfbml-parse-ignore"
-              >
-                <a href="https://www.facebook.com/luckydraw.me/">
-                  LuckyDraw.me
-                </a>
-              </blockquote>
-            </div>
-          </Grid.Col>
-        </Grid.Row>
-      </SiteWrapper>
+       </SiteWrapper>
     );
   }
 }

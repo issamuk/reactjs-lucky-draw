@@ -13,17 +13,11 @@ class SiteWrapper extends React.Component {
   render() {
     return (
       <Site.Wrapper
-        headerProps={{
-          href: '/',
-          alt: APP_NAME,
-          imageURL: 'images/luckydraw-logo.svg',
-          navItems: <NavItems />,
-        }}
-        navProps={{ itemsObjects: NAVBAR_ITEMS }}
+        navProps={{ itemsObjects: [] }}
         footerProps={{
-          note: <FooterNote />,
-          copyright: <Copyright />,
-          nav: <NavBar />,
+          note: <></>,
+          copyright: <></>,
+          nav: <></>,
         }}
       >
         <div className="container main-section">{this.props.children}</div>

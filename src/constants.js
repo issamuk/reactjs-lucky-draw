@@ -1,4 +1,4 @@
-export const APP_NAME = 'Lucky Draw Simulator';
+export const APP_NAME = 'Sorteio Academia Seigan';
 
 export const NAVBAR_ITEMS = [
   {
