@@ -16,7 +16,7 @@ class SiteWrapper extends React.Component {
         headerProps={{
           href: '/',
           alt: APP_NAME,
-          imageURL: '',
+          imageURL: 'https://extra2.bsgi.org.br/static/seigangeneration/img/logo_seigan_br.svg',
           navItems: <></>,
         }}
         navProps={{ itemsObjects: [] }}
