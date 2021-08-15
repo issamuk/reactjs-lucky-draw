@@ -30,3 +30,8 @@
 .draw-btn {
   width: 200px;
 }
+
+.legend {
+  bottom: 20px !important;
+  opacity: 0.65 !important;
+}
