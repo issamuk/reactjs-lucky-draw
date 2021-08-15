@@ -13,6 +13,12 @@ class SiteWrapper extends React.Component {
   render() {
     return (
       <Site.Wrapper
+        headerProps={{
+          href: '/',
+          alt: APP_NAME,
+          imageURL: '',
+          navItems: <></>,
+        }}
         navProps={{ itemsObjects: [] }}
         footerProps={{
           note: <></>,
