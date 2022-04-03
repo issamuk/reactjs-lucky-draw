@@ -4,7 +4,7 @@ import "./style.css";
 
 const PreviouslyDrawnItemsBlock = props => (
   <Card
-    title="Vencedores"
+    title="Vencedor"
     className="past-drawn-block"
     body={
       <Table>
@@ -13,7 +13,7 @@ const PreviouslyDrawnItemsBlock = props => (
             ? ""
             : props.pastDrawnItems.map((item, index) => (
                 <Table.Row key={index}>
-                  <Table.Col>{item}</Table.Col>
+                  <Table.Col ><h1>{item}</h1></Table.Col>
                 </Table.Row>
               ))}
         </Table.Body>
